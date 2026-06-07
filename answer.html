@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question 1 Answer</title>
+</head>
+
+<body>
+    <!--
+    Question 1: Student Registration with Name Formatting and Validation
+
+    Take input for Name, Email, and Age.
+    Use trim() to remove extra spaces from the Name.
+    Convert the name into uppercase using toUpperCase().
+
+    Validation:
+    Name should not be empty and must be at least 2 characters long
+    Email should match proper format using regex
+    Age should be 18 or above
+
+    If any validation fails, show error messages beside the fields.
+    If all inputs are correct:
+    Store the data in an array as an object
+    Display output like: RAHUL - rahul@gmail.com - 22
+    -->
+
+    <h2>Student Registration</h2>
+
+    <form id="studentForm">
+        Name: <input type="text" id="name"> <span id="nameError"></span><br><br>
+        Email: <input type="text" id="email"> <span id="emailError"></span><br><br>
+        Age: <input type="number" id="age"> <span id="ageError"></span><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Output:</h3>
+    <p id="output"></p>
+
+    <h3>Registered Students:</h3>
+    <ul id="studentList"></ul>
+
+    <script src="./answer.js"></script>
+</body>
+
+</html>
