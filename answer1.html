@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question 2 Answer</title>
+</head>
+
+<body>
+    <!--
+    Question 2: Customer Registration with Email Domain Restriction
+
+    Take Name and Email as input.
+    First check email format using regex.
+    Then use includes() to ensure email contains "gmail.com".
+    Convert email into lowercase using toLowerCase().
+
+    If validation fails, show proper error message.
+    If successful:
+    Store data in array
+    Display all customers in list using innerHTML
+    -->
+
+    <h2>Customer Registration</h2>
+
+    <form id="customerForm">
+        Name: <input type="text" id="name"> <span id="nameError"></span><br><br>
+        Email: <input type="text" id="email"> <span id="emailError"></span><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Message:</h3>
+    <p id="output"></p>
+
+    <h3>Customers:</h3>
+    <ul id="customerList"></ul>
+
+    <script src="./answer1.js"></script>
+</body>
+
+</html>
